@@ -43,7 +43,7 @@ $ pnpm lint
 $ pnpm format
 ```
 
-THen you can open up the GraphQL Playground and play with the `Account` types:
+Then you can open up the GraphQL Playground and play with the `Account` types:
 
 ```graphql
 mutation CreateNewAccount {
