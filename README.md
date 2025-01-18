@@ -6,6 +6,7 @@
 
 - TypeORM for working with a SQL database
 - GraphQL support
+- An `account` entity and `createAccount` mutation + `accounts` query
 - Viem with custom scalars for Ethereum addresses and hashes
 - A pretty logger
 - A generic pagination and sorting service that can be applied to any entity
