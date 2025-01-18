@@ -43,7 +43,43 @@ $ pnpm lint
 $ pnpm format
 ```
 
-## Test
+THen you can open up the GraphQL Playground and play with the `Account` types:
+
+```graphql
+mutation CreateNewAccount {
+  createAccount(
+    createAccountInput: {
+      address: "0xEthereumAddress"
+    }
+  ) {
+    id
+    address
+    createdAt
+    updatedAt
+  }
+}
+
+query GetAllAccounts {
+  accounts(sort: { key: "address", asc: true }) {
+    items {
+      id
+      address
+      createdAt
+      updatedAt
+    }
+    meta {
+      currentPage
+      itemCount
+      itemType
+      itemsPerPage
+      totalItems
+      totalPages
+    }
+  }
+}
+```
+
+## Running Tests
 
 ```bash
 # unit tests
