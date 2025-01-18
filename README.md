@@ -4,14 +4,16 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository. This also includes the added bells and whistles:
 
-- TypeORM for working with a SQL database
+- TypeORM for working with a Postgres database
 - GraphQL support
-- An `account` entity and `createAccount` mutation + `accounts` query
+- Simple validation with `class-validator` + `class-transformer`
+- An `account` entity with an Ethereum address field
+- A `createAccount` mutation & `accounts` query
 - Viem with custom scalars for Ethereum addresses and hashes
-- A pretty logger
+- A prettier logger with `nestjs-pino`
 - A generic pagination and sorting service that can be applied to any entity
 - Base entities setup using UUID strings as IDs
-- A decimal transformer
+- A decimal transformer to store decimals as strings in the DB
 - An optional but non-null decorator
 - TSConfig/ESLint/Prettier wrangling
 - Husky pre-commit hooks and conventional commit messages
